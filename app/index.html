@@ -1,0 +1,126 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="UTF-8" />
+		<title>Podstawy robotyki - Praca domowa 1</title>
+		<link rel="Stylesheet" href="./style.css" type="text/css">
+		<script src="./skrypt.js"></script>
+	</head>
+	<body>
+		<div id="kontener">
+			<div id="naglowek">
+				<h1>Podstawy robotyki - Praca domowa 1</h1>
+				<h2>Maciej Dominiak</h2>
+			</div>
+			
+			
+			<div id="kontener_macierz_h30">
+				<h3>Kinematyka prosta macierz H<sup>3</sup><sub>0</sub></h3>
+				<div>
+					<label for="h30_t_1">&theta;<sub>1</sub>:</label>
+					<input id="h30_t_1" type="number" placeholder="Wpisz kąt w stopniach..."/>
+				</div>
+				<div>
+					<label for="h30_t_2">&theta;<sub>2</sub>:</label>
+					<input id="h30_t_2" type="number" placeholder="Wpisz kąt w stopniach..."/>
+				</div>
+				<div>
+					<label for="h30_t_3">&theta;<sub>3</sub>:</label>
+					<input id="h30_t_3" type="number" placeholder="Wpisz kąt w stopniach..."/>
+				</div>
+				<div>
+					<button onclick="h30_oblicz()">Oblicz</button>
+				</div>
+				
+				<div id="wynik_h30"></div>
+			</div>
+			
+			
+			<div id="kontener_macierz_h50">
+				<h3>Kinematyka prosta macierz H<sup>5</sup><sub>0</sub></h3>
+				<div>
+					<label for="h50_t_1">&theta;<sub>1</sub>:</label>
+					<input id="h50_t_1" type="number" placeholder="Wpisz kąt w stopniach..."/>
+				</div>
+				<div>
+					<label for="h50_t_2">&theta;<sub>2</sub>:</label>
+					<input id="h50_t_2" type="number" placeholder="Wpisz kąt w stopniach..."/>
+				</div>
+				<div>
+					<label for="h50_t_3">&theta;<sub>3</sub>:</label>
+					<input id="h50_t_3" type="number" placeholder="Wpisz kąt w stopniach..."/>
+				</div>
+				<div>
+					<label for="h50_t_4">&theta;<sub>4</sub>:</label>
+					<input id="h50_t_4" type="number" placeholder="Wpisz kąt w stopniach..."/>
+				</div>
+				<div>
+					<label for="h50_t_5">&theta;<sub>5</sub>:</label>
+					<input id="h50_t_5" type="number" placeholder="Wpisz kąt w stopniach..."/>
+				</div>
+				<div>
+					<button onclick="h50_oblicz()">Oblicz</button>
+				</div>
+				
+				<div id="wynik_h50"></div>
+			</div>
+			
+			
+			
+			
+			<div id="kontener_macierz_h30">
+				<h3>Kinematyka odwrotna macierz H<sup>3</sup><sub>0</sub></h3>
+				<div>
+					<label for="h30_t_1_odwrotna">X:</label>
+					<input id="h30_t_1_odwrotna" type="number" placeholder="Wpisz położenie..."/>
+				</div>
+				<div>
+					<label for="h30_t_2_odwrotna">Y:</label>
+					<input id="h30_t_2_odwrotna" type="number" placeholder="Wpisz położenie..."/>
+				</div>
+				<div>
+					<label for="h30_t_3_odwrotna">Z:</label>
+					<input id="h30_t_3_odwrotna" type="number" placeholder="Wpisz położenie..."/>
+				</div>
+				<div>
+					<button onclick="h30_odwrotna_oblicz()">Oblicz</button>
+				</div>
+				
+				<div id="wynik_h30_odwrotna"></div>
+			</div>
+			
+			
+			
+			<div id="kontener_macierz_h50">
+				<h3>Kinematyka odwrotna macierz H<sup>5</sup><sub>0</sub></h3>
+				<div>
+					<label for="h50_t_1_odwrotna">X:</label>
+					<input id="h50_t_1_odwrotna" type="number" placeholder="Wpisz położenie..."/>
+				</div>
+				<div>
+					<label for="h50_t_2_odwrotna">Y:</label>
+					<input id="h50_t_2_odwrotna" type="number" placeholder="Wpisz położenie..."/>
+				</div>
+				<div>
+					<label for="h50_t_3_odwrotna">Z:</label>
+					<input id="h50_t_3_odwrotna" type="number" placeholder="Wpisz położenie..."/>
+				</div>
+				<div>
+					<label for="h50_t_4_odwrotna">Pitch: &theta;<sub>1</sub>:</label>
+					<input id="h50_t_4_odwrotna" type="number" placeholder="Wpisz kąt w stopniach..."/>
+				</div>
+				<div>
+					<label for="h50_t_5_odwrotna">Roll: &theta;<sub>2</sub>:</label>
+					<input id="h50_t_5_odwrotna" type="number" placeholder="Wpisz kąt w stopniach..."/>
+				</div>
+				<div>
+					<button onclick="h50_odwrotna_oblicz()">Oblicz</button>
+				</div>
+				
+				<div id="wynik_h50_odwrotna"></div>
+			</div>
+			
+			
+		</div>
+	</body>
+</html>
